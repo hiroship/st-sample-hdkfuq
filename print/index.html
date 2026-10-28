@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>サザン塗装様 ホームページご提案(A4)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<style>
+  :root {
+    --navy: #0f2b3d;
+    --navy-2: #174257;
+    --ink: #13242f;
+    --body: #3b4a53;
+    --muted: #6e7b82;
+    --line: #e8e3d9;
+    --bg: #f7f4ee;
+    --accent: #0a7f8c;
+    --accent-2: #3bb8c3;
+    --accent-soft: #e3f2f1;
+    --sand: #e8dbc2;
+  }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: #d9d6cf; font-family: "Noto Sans JP", "Hiragino Sans", sans-serif; color: var(--body); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .en { font-family: "Plus Jakarta Sans", sans-serif; letter-spacing: -.01em; }
+  .sheet { width: 210mm; height: 297mm; margin: 10mm auto; background: var(--bg); position: relative; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 10px 40px rgba(0,0,0,.18); }
+  @media print { body { background: none; } .sheet { margin: 0; box-shadow: none; } }
+
+  /* top bar */
+  .top { background: var(--navy); color: #fff; padding: 7mm 12mm 6mm; display: flex; align-items: center; justify-content: space-between; }
+  .brand { display: flex; align-items: center; gap: 3mm; }
+  .brand svg { width: 11mm; height: 11mm; }
+  .brand b { display: block; font-size: 15pt; font-weight: 900; letter-spacing: .06em; line-height: 1.1; }
+  .brand small { display: block; font-family: "Plus Jakarta Sans", sans-serif; font-size: 6.5pt; font-weight: 800; letter-spacing: .24em; color: var(--accent-2); margin-top: 1mm; }
+  .to { text-align: right; line-height: 1.5; }
+  .to .tag { display: inline-block; font-size: 7.5pt; font-weight: 700; padding: .8mm 3mm; border-radius: 99px; background: rgba(255,255,255,.12); color: var(--accent-2); letter-spacing: .1em; }
+  .to b { display: block; font-size: 11pt; margin-top: 1mm; }
+  .to small { font-size: 7.5pt; opacity: .7; }
+
+  /* hero */
+  .hero { padding: 8mm 12mm 0; }
+  .hero h1 { margin: 0; color: var(--ink); font-size: 24pt; line-height: 1.35; font-weight: 900; letter-spacing: -.01em; }
+  .hero h1 em { font-style: normal; color: var(--accent); }
+  .hero p { margin: 3mm 0 0; font-size: 9.5pt; line-height: 1.75; }
+
+  /* device mockups */
+  .mock { position: relative; margin: 7mm 12mm 0; height: 88mm; }
+  .browser { position: absolute; left: 0; top: 0; width: 150mm; border-radius: 3.5mm; overflow: hidden; background: #fff; border: .4mm solid #d6cfc2; }
+  .browser .bar { height: 6mm; background: #efeae1; display: flex; align-items: center; gap: 1.4mm; padding: 0 3mm; }
+  .browser .bar i { width: 2mm; height: 2mm; border-radius: 50%; background: #d6cfc2; }
+  .browser .bar span { margin-left: 3mm; flex: 1; height: 3.4mm; border-radius: 99px; background: #fff; font-size: 5.5pt; color: var(--muted); display: flex; align-items: center; padding-left: 2.5mm; }
+  .browser img { display: block; width: 100%; height: 80mm; object-fit: cover; object-position: top; }
+  .phone { position: absolute; right: 2mm; top: 4mm; width: 40mm; padding: 1.8mm; border-radius: 7mm; background: #13242f; outline: 1.2mm solid var(--bg); }
+  .phone img { display: block; width: 100%; height: 78mm; object-fit: cover; object-position: top; border-radius: 5.4mm; }
+  .label { position: absolute; font-size: 7pt; font-weight: 700; color: var(--muted); }
+  .label.pc { left: 0; bottom: 0; }
+  .label.sp { right: 2mm; bottom: 0; width: 40mm; text-align: center; }
+
+  /* points */
+  .points { margin: 6mm 12mm 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 3mm; }
+  .pt { background: #fff; border-radius: 3.5mm; padding: 4mm 4.5mm; display: grid; grid-template-columns: 9mm 1fr; gap: 3mm; align-items: start; border: .3mm solid var(--line); }
+  .pt .n { width: 9mm; height: 9mm; border-radius: 2.5mm; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800; font-size: 10pt; }
+  .pt b { display: block; color: var(--ink); font-size: 10pt; line-height: 1.4; }
+  .pt span { display: block; font-size: 8pt; line-height: 1.6; margin-top: .8mm; }
+
+  /* bottom */
+  .bottom { margin: auto 0 0; background: #fff; border-top: .3mm solid var(--line); padding: 6mm 12mm 7mm; display: grid; grid-template-columns: 36mm 1fr 1fr; gap: 6mm; align-items: stretch; }
+  .qr { text-align: center; }
+  .qr #qr { width: 30mm; height: 30mm; margin: 0 auto; display: grid; place-items: center; border-radius: 2.5mm; }
+  .qr #qr img, .qr #qr svg { width: 30mm; height: 30mm; display: block; }
+  .qr #qr.empty { border: .4mm dashed #c8c0b2; font-size: 6.5pt; color: var(--muted); line-height: 1.5; padding: 2mm; }
+  .qr p { margin: 2mm 0 0; font-size: 7.5pt; font-weight: 700; color: var(--ink); line-height: 1.4; }
+  .col h3 { margin: 0 0 2.5mm; font-size: 9.5pt; color: var(--ink); display: flex; align-items: center; gap: 2mm; }
+  .col h3::before { content: ""; width: 1mm; height: 3.6mm; border-radius: 1mm; background: var(--accent); }
+  .steps { margin: 0; padding: 0; list-style: none; display: grid; gap: 1.6mm; font-size: 8pt; }
+  .steps li { display: flex; gap: 2mm; align-items: baseline; }
+  .steps li b { font-family: "Plus Jakarta Sans", sans-serif; color: var(--accent); font-size: 8pt; }
+  .contact { display: grid; gap: 2.6mm; font-size: 8pt; }
+  .contact div { display: grid; grid-template-columns: 14mm 1fr; align-items: end; }
+  .contact span { color: var(--muted); }
+  .contact i { border-bottom: .3mm solid #c8c0b2; height: 5mm; }
+  .note { position: absolute; left: 12mm; right: 12mm; bottom: 2mm; font-size: 6pt; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="top">
+    <div class="brand">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <defs><linearGradient id="lgWave" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7fd6dc"/><stop offset=".55" stop-color="#3bb8c3"/><stop offset="1" stop-color="#e8dbc2"/></linearGradient></defs>
+        <rect width="48" height="48" rx="14" fill="#174257"/>
+        <path d="M11 25 L24 13.5 L37 25" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M33.5 22 V25.8" fill="none" stroke="#3bb8c3" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="33.5" cy="27.6" r="2.1" fill="#3bb8c3"/>
+        <path d="M10 35.5 C14 31.5 18 31.5 22 35.5 S30 39.5 34 35.5 S38 32.8 38 32.8" fill="none" stroke="url(#lgWave)" stroke-width="4.2" stroke-linecap="round"/>
+      </svg>
+      <div><b>サザン塗装</b><small>SOUTHERN TOSO</small></div>
+    </div>
+    <div class="to">
+      <span class="tag">ホームページ ご提案</span>
+      <b>株式会社サザン塗装 様</b>
+      <small>2026年10月</small>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>御社の施工実績を、<br><em>24時間はたらく営業マン</em>に。</h1>
+    <p>Googleマップに掲載されている御社の写真とクチコミをもとに、ホームページを実際に作ってみました。<br>提案書ではなく、このまま公開できる「完成品」です。QRコードからスマホでご覧いただけます。</p>
+  </div>
+
+  <div class="mock">
+    <div class="browser">
+      <div class="bar"><i></i><i></i><i></i><span>サザン塗装 | 茅ヶ崎・藤沢の外壁塗装・屋根塗装専門店</span></div>
+      <img src="shot-desktop.jpg" alt="パソコンで見たサンプルサイト">
+    </div>
+    <div class="phone"><img src="shot-mobile.jpg" alt="スマホで見たサンプルサイト"></div>
+  </div>
+
+  <div class="points">
+    <div class="pt"><span class="n">01</span><div><b>実際の施工写真が主役</b><span>御社が手がけた外壁・屋根の写真で、仕上がりの良さがひと目で伝わります。</span></div></div>
+    <div class="pt"><span class="n">02</span><div><b>湘南の地元業者らしさ</b><span>富士山と海の風景、潮風に合わせた塗り替え提案で、地域密着を打ち出します。</span></div></div>
+    <div class="pt"><span class="n">03</span><div><b>問い合わせにつながる設計</b><span>電話・無料診断ボタンを各所に配置。フォームの必須はお名前と電話番号だけです。</span></div></div>
+    <div class="pt"><span class="n">04</span><div><b>スマホでも見やすい</b><span>画面下に電話ボタンが常に表示され、メニューからすぐ目的の情報へ移動できます。</span></div></div>
+  </div>
+
+  <div class="bottom">
+    <div class="qr">
+      <div id="qr" class="empty">公開URLが決まったら<br>ここにQRコードが入ります</div>
+      <p>スマホで<br>サンプルを見る</p>
+    </div>
+    <div class="col">
+      <h3>公開までの流れ</h3>
+      <ol class="steps">
+        <li><b>01</b>サンプルをご確認いただく</li>
+        <li><b>02</b>写真・文章・掲載内容を打ち合わせ</li>
+        <li><b>03</b>修正して最終確認</li>
+        <li><b>04</b>公開(以降の更新もお任せください)</li>
+      </ol>
+    </div>
+    <div class="col">
+      <h3>ご連絡先</h3>
+      <div class="contact">
+        <div><span>担当</span><i></i></div>
+        <div><span>電話</span><i></i></div>
+        <div><span>メール</span><i></i></div>
+      </div>
+    </div>
+  </div>
+  <div class="note">※ 本サンプルは提案用に作成したもので、公開されていません。写真・クチコミ等の掲載内容は、公開前に御社にご確認いただきます。</div>
+</div>
+
+<script>
+  // QR: open this page with ?url=https://... to print the QR code for the sample site
+  (function () {
+    var url = new URLSearchParams(location.search).get('url');
+    if (!url || typeof qrcode !== 'function') return;
+    var qr = qrcode(0, 'M');
+    qr.addData(url);
+    qr.make();
+    var box = document.getElementById('qr');
+    box.classList.remove('empty');
+    box.innerHTML = qr.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
+  })();
+</script>
+</body>
+</html>
